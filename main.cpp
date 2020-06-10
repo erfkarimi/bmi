@@ -51,19 +51,40 @@ class Bmi{
         std::cout<<"Do you want to see the result? [Y/n]:"<<"\n";
         std::cin>>info;
         if (info =="Y" || info == "y"){
-        std::cout<<name<<" "<<lastName<<"\n";
+        std::cout<<"*************************************"<<"\n";
+        std::cout<<"Name : "<<name<<" "<<lastName<<"\n";
         std::cout<<"Your fitness status :"<<"\n";
         consider();
         std::cout<<"Gender: "<<gender<<"\n";
         std::cout<<"Age:"<<age<<"\n";
         }
         else if(info == "N" || info == "n"){
+            std::cout<<"*************************************"<<"\n";
             std::cout<<"Have a good time"<<"\n";
         }
     }
 };
+class Title{
+        public:
+        Title(){
+            std::cout<<"\t*********"<<"  \t****\t\t   ****"<<"\t\t*******"<<"\n";
+            std::cout<<"\t*"<<"        *"<<"  \t*"<<"  *"<<"               *"<<"  *"<<"\t\t   *"<<"\n";
+            std::cout<<"\t*"<<"\t  *"<<" \t*"<<"   *"<<"             *"<<"   *"<<"\t\t   *"<<"\n";
+            std::cout<<"\t*"<<"        *"<<"  \t*"<<"    *"<<"           *"<<"    *"<<"\t\t   *"<<"\n";
+            std::cout<<"\t*********"<<"  \t*"<<"     *"<<"         *"<<"     *"<<"\t\t   *"<<"\n";
+            std::cout<<"\t*"<<"        *"<<"  \t*"<<"      *"<<"       *"<<"      *"<<"\t\t   *"<<"\n";
+            std::cout<<"\t*"<<"\t  *"<<" \t*"<<"       *"<<"     *"<<"       *"<<"\t\t   *"<<"\n";
+            std::cout<<"\t*"<<"        *"<<"  \t*"<<"        *"<<"   *"<<"        *"<<"\t\t   *"<<"\n";
+            std::cout<<"\t*********"<<"  \t*"<<"          *"<<"*"<<"         *"<<"\t\t*******"<<"\n";
+
+           
+            
+            
+        }
+};
 
 int main(){
+    Title title;
     Bmi bmi;
     std::cout<<"Enter your name:"<<"\n";
     std::cin>>bmi.name;
